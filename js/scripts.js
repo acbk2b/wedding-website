@@ -255,8 +255,8 @@ $(document).ready(function () {
     );
 
     if (
-      MD5($("#invite_code").val()) !== "b0e53b10c1f55ede516b240036b88f40" &&
-      MD5($("#invite_code").val()) !== "2ac7f43695eb0479d5846bb38eec59cc"
+      MD5($("#invite_code").val()) !== "5fd0cdfe3c41e9d075b384de22a78d5a"
+      // && MD5($("#invite_code").val()) !== "2ac7f43695eb0479d5846bb38eec59cc"
     ) {
       $("#alert-wrapper").html(
         alert_markup(
@@ -266,7 +266,7 @@ $(document).ready(function () {
       );
     } else {
       $.post(
-        "https://script.google.com/macros/s/AKfycbyo0rEknln8LedEP3bkONsfOh776IR5lFidLhJFQ6jdvRiH4dKvHZmtoIybvnxpxYr2cA/exec",
+        "https://script.google.com/macros/s/AKfycbxa2Jynk1jT6V-3UDYWzFmEaDyMdh9BJl4Pq_cV8aU9hIPXf_QXMTtsEqTw79sqxkw/exec",
         data,
       )
         .done(function (data) {
