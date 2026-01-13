@@ -198,7 +198,7 @@ $(document).ready(function () {
   }
 
   /********************** Embed youtube video *********************/
-  $(".player").YTPlayer();
+  // $(".player").YTPlayer();
 
   /********************** Toggle Map Content **********************/
   $("#btn-show-map").click(function () {
@@ -254,8 +254,10 @@ $(document).ready(function () {
       ),
     );
 
+    console.log("DEBUG: " + MD5($("#invite_code").val()));
+    console.log("DEBUG: " + data);
     if (
-      MD5($("#invite_code").val()) !== "5fd0cdfe3c41e9d075b384de22a78d5a"
+      MD5($("#invite_code").val()) !== "263f6e3649bad68b815268ebf32ab4ad"
       // && MD5($("#invite_code").val()) !== "2ac7f43695eb0479d5846bb38eec59cc"
     ) {
       $("#alert-wrapper").html(
@@ -266,7 +268,7 @@ $(document).ready(function () {
       );
     } else {
       $.post(
-        "https://script.google.com/macros/s/AKfycbxa2Jynk1jT6V-3UDYWzFmEaDyMdh9BJl4Pq_cV8aU9hIPXf_QXMTtsEqTw79sqxkw/exec",
+        "https://script.google.com/macros/s/AKfycbyRcp5wfcdsktBL7XdVLVOINiFHPjPxa_wHH03raWr0Vn1hYYVkiXIriu6DlwN92V0Q/exec",
         data,
       )
         .done(function (data) {
@@ -566,4 +568,3 @@ var MD5 = function (string) {
 
   return temp.toLowerCase();
 };
-
