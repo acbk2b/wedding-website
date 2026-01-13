@@ -1,0 +1,92 @@
+/* Dark Reader-like theme */
+
+body {
+    background-color: #1e1e1e !important;
+    color: #e8e6e3 !important;
+}
+
+/* Invert background images or colors on main sections */
+.events,
+footer {
+    background: #111 !important;
+}
+
+.hero {
+    filter: brightness(0.7);
+}
+
+section.navigation,
+section.navigation.fixed,
+header {
+    background: #181a1b !important;
+    border-bottom-color: #333 !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #e8e6e3 !important;
+}
+
+a {
+    color: #3391ff !important;
+}
+
+a:hover {
+    color: #66afff !important;
+}
+
+/* Invert buttons */
+.btn-fill, .btn-accent {
+    background-color: #2a2a2a !important;
+    color: #e8e6e3 !important;
+    border: 1px solid #555 !important;
+}
+
+.btn-white {
+    background-color: transparent !important;
+    color: #e8e6e3 !important;
+    border: 1px solid #e8e6e3 !important;
+}
+
+/* Tone down images */
+img {
+    filter: brightness(.8) contrast(1.2);
+}
+
+/* Forms */
+.form-input-group input {
+    background-color: #333 !important;
+    color: #e8e6e3 !important;
+    border-color: #555 !important;
+}
+
+.form-input-group .fa {
+    color: #aaa !important;
+}
+
+/* Modals */
+.modal-content {
+    background-color: #2a2a2a !important;
+}
+
+.modal-header, .modal-footer {
+    border-bottom-color: #555 !important;
+    border-top-color: #555 !important;
+}
+
+.modal-body .close span {
+    color: #fff !important;
+}
+
+/* Specific Sections */
+#invitation,
+#intro,
+#instagram,
+#eng-pics,
+#map,
+.rsvp {
+    background-color: #1e1e1e !important;
+}
+
+.wp3, .wp4, .wp5, .wp6 {
+    border-bottom: 1px solid #444 !important;
+}
