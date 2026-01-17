@@ -34,6 +34,10 @@ a:hover {
     color: #66afff !important;
 }
 
+.time {
+    color: #ffd700 !important; /* Make event times more visible in dark mode */
+}
+
 /* Invert buttons */
 .btn-fill, .btn-accent {
     background-color: #2a2a2a !important;
